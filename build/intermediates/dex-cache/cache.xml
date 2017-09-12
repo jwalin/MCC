@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\shalin.s\AppData\Roaming\Skype\My Skype Received Files\buddDialer\buddDialer\app\libs\radial-menu-v4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5d8365e03c7b428815d3d8584332b1df298cbb9c">
+        <dex dex="C:\Users\shalin.s\AppData\Roaming\Skype\My Skype Received Files\buddDialer\buddDialer\app\build\intermediates\pre-dexed\debug\radial-menu-v4_6173ef255934c8f7fce5a6cb7ce461dd437dc4b9.jar" />
+    </item>
+
+</items>

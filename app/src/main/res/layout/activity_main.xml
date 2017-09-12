@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	//
+	// Copyright (c) 2017 Phaz1 Inc.
+	//
+	// All Rights Reserved
+	//
+	//  This program artifact may not be copied, reproduced or distributed in any
+	//  manner, way or form without prior written authorization from an authorized
+	//  representative of Phaz1 Inc.
+	//
+-->
+<!-- Main Activity single pane layout. This layout contains a single ContactsListFragment that
+     displays a list of contacts. Tapping on a contact will start a new activity to display the
+     contact details. -->
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/contact_list"
+    android:name="com.phaz1.mcc.ContactsListFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />

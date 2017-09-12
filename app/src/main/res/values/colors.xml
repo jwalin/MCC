@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+	//
+	// Copyright (c) 2017 Phaz1 Inc.
+	//
+	// All Rights Reserved
+	//
+	//  This program artifact may not be copied, reproduced or distributed in any
+	//  manner, way or form without prior written authorization from an authorized
+	//  representative of Phaz1 Inc.
+	//
+-->
+<resources>
+
+    <!-- Define a standard holo blue color. Useful as we can refer to it from various other
+         resource files or even code and it only needs to be updated in one place if we wanted
+         to change it. -->
+    <color name="holo_blue">#FF33B5E5</color>
+    <color name="darkgray">#252525</color>
+    <color name="colorPrimary">#003333</color>
+    <color name="colorPrimaryDark">#001717</color>
+    <color name="colorAccent">#003333</color>
+    <color name="Silver">#C0C0C0</color>
+    <color name="SkyBlue">#87ceeb</color>
+    <color name="BBlue">#a01e6580</color>
+
+    <color name="MenuBackground">#1e6580</color>
+    <color name="MenuFont">#C0C0C0</color>
+    <color name="SubMenuBackground">#1E6580</color>
+    <color name="SubMenuFont">#020202</color>
+    <color name="Black">#000000</color>
+    <color name="MediumBlue">#0000CD</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Gray">#808080</color>
+    <color name="DimGray">#696969</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="transparent_red">#CCFF0000</color>
+    <color name="transparentBlack">#88000000</color>
+</resources>

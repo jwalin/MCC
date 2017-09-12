@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayout1"
+    android:orientation="vertical"
+    style="@style/root">
+    <info.hoang8f.android.segmented.SegmentedGroup
+        android:id="@+id/segGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        segmentedgroup:sc_border_width="1dp"
+        segmentedgroup:sc_corner_radius="10dp"
+        segmentedgroup:sc_tint_color="@color/colorPrimary"
+        segmentedgroup:sc_checked_text_color="@color/White">
+
+        <RadioButton
+            android:id="@+id/radioPending"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="0"
+            android:text="@string/pending"
+            android:checked="true"
+            style="@style/RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radioComplete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:tag="1"
+            android:layout_weight="1"
+            android:text="@string/completed"
+            style="@style/RadioButton" />
+    </info.hoang8f.android.segmented.SegmentedGroup>
+
+    <ListView
+        android:id="@+id/listSchedule"
+        android:scrollbars="none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

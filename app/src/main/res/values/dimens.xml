@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+	//
+	// Copyright (c) 2017 Phaz1 Inc.
+	//
+	// All Rights Reserved
+	//
+	//  This program artifact may not be copied, reproduced or distributed in any
+	//  manner, way or form without prior written authorization from an authorized
+	//  representative of Phaz1 Inc.
+	//
+-->
+<resources>
+
+    <!-- Define some key view padding values. This is useful because the values can be used in
+         multiple views and changed from one central location. It also gives us the ability to
+         provide alternate values for different device configurations using resource directory
+         qualifiers. -->
+    <dimen name="padding">16dp</dimen>
+    <!-- Default margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="cal_item_hight">100dp</dimen>
+    <dimen name="cal_item_blue_width">90dp</dimen>
+    <dimen name="one_dp_common">1dp</dimen>
+    <dimen name="cal_item_user_icon">45dp</dimen>
+    <dimen name="cal_item_next">45dp</dimen>
+    <dimen name="margin_top">3dp</dimen>
+    <dimen name="control_height">36dp</dimen>
+</resources>

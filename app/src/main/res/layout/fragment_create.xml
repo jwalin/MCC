@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    style="@style/root"
+    android:orientation="vertical">
+
+
+    <!-- call tele number text control layout container
+         has a image control (+) for picking contacts too-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/btnAddContact">
+
+            <EditText
+                android:id="@+id/txtContactNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pick (+) Contact or enter Tele# Number here..."
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="Next"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/txtTitle" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/btnAddContact"
+            android:layout_width="40dp"
+            android:layout_height="@dimen/control_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:inputType="textNoSuggestions"
+            android:src="@drawable/ic_action_add" />
+    </RelativeLayout>
+
+
+    <!-- call title text control layout container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/title"
+            android:imeActionId="@+id/edTitle"
+            android:imeActionLabel="Next"
+            android:imeOptions="actionNext"
+            android:inputType="textNoSuggestions"
+            android:maxLines="1"
+            android:nextFocusDown="@+id/randomGroup" />
+    </LinearLayout>
+
+
+    <!-- fixed and random button layout continer -->
+    <RadioGroup
+        android:id="@+id/randomGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/control_height"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="6dp"
+        android:background="@drawable/button_background"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <RadioButton
+            android:id="@+id/radioFix"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight=".5"
+            android:checked="true"
+            android:text="Fixed Time"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioRandom"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:text="Random Dial"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+
+    <!-- * repeat interval layout container -->
+    <LinearLayout
+        android:id="@+id/repeatContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/control_height"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/messageTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="end"
+            android:paddingRight="5dp"
+            android:text="Repeat Call"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRepeat"
+            style="@style/match_height_width"
+            android:text="Select Interval"
+            android:textStyle="bold"
+            tools:text="Date" />
+    </LinearLayout>
+
+
+    <!-- * an empty container that is displayed when
+       the random button is selected to keep the
+       save button in the same place at bottom-->
+    <LinearLayout
+        android:id="@+id/emptyContaine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/control_height"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:visibility="gone"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/messageTextView1"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/backgrounds"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:text="Set Call Date/Time Range Below"
+            android:textColor="@color/White"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <!-- * start and end date picker layout container -->
+    <LinearLayout
+        android:id="@+id/btnDateContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/control_height"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_weight=".5"
+            android:text="Start Date"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight=".5"
+            android:text="End Date"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <!-- * start and end time picker layout container -->
+    <LinearLayout
+        android:id="@+id/randomTimeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/control_height"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnSTime"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/control_height"
+            android:layout_weight=".5"
+            android:text="@string/Start_Time"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnETime"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/control_height"
+            android:layout_marginLeft="5dp"
+            android:layout_weight=".5"
+            android:text="@string/End_Time"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <!-- * call type (y/n alert before) layout -->
+    <RadioGroup
+        android:id="@+id/radioGroup1CallType"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="6dp"
+        android:background="@drawable/button_background"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <RadioButton
+            android:id="@+id/radioButtonAutoCall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight=".5"
+            android:checked="true"
+            android:text="Auto-Dial Call "
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCallBefore"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_weight=".5"
+            android:text="Alert Before"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+
+    <!-- * save = create call button -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/hover"
+        android:radius="5px"
+        android:text="@string/c_Save"
+        android:textColor="@color/White"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

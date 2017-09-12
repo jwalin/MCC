@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+	//
+	// Copyright (c) 2017 Phaz1 Inc.
+	//
+	// All Rights Reserved
+	//
+	//  This program artifact may not be copied, reproduced or distributed in any
+	//  manner, way or form without prior written authorization from an authorized
+	//  representative of Phaz1 Inc.
+	//
+-->
+<resources>
+    <string name="app_name">MyCallCalendar</string>
+    <string name="action_settings">Settings</string>
+    <string name="radial_demo">Radial Menu</string>
+    <string name="Create">Create</string>
+    <string name="Contact">Contact</string>
+    <string name="Send">Send</string>
+    <string name="Manage">Manage</string>
+    <string name="Setting">Setting</string>
+    <string name="about_body">By James M Earle - Phaz1 Inc.</string>
+    <string name="contact_body">Send EMails to: support@phaz1.com</string>
+    <string name="main_body">Long press screen to show menu.</string>
+    <string name="open_menu">Open Menu</string>
+    <string name="normal">Normal</string>
+    <string name="expandable">Expandable</string>
+    <string name="close">Close</string>
+    <string name="addContact">+</string>
+
+    <string name="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <string name="no_intent_found">No application found to handle this action</string>
+
+    <string-array name="beforeRemainder">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+        <item>150</item>
+        <item>180</item>
+    </string-array>
+
+    <!-- Create Dial activity_create.xml Template -->
+
+    <string name="l_interval_">Repeat Call </string>
+    <string name="call_Type_Auto">Auto-Dial </string>
+    <string name="call_Type_Alert">Alert Before Call </string>
+    <string name="start1">Start Date </string>
+    <string name="end1">End Date </string>
+    <string name="c_Copy">Copy</string>
+    <string name="c_Discard">Discard</string>
+    <string name="c_Save">Add Call to Calendar</string>
+    <string name="ok">OK</string>
+
+    <string name="addContactContactName">Contact Number </string>
+    <string name="addContactContactName1">Phone Number </string>
+
+    <string name="addContactContactName_add">Pick (+) Contact or enter Telephone Number here...</string>
+    <string name="title">Enter a Call Title here...</string>
+
+    <string name="Description">Description </string>
+
+    <string name="action_description">Action Description</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="title_home">Create Call</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="title_activity_login">Sign in</string>
+    <string name="about_title">About</string>
+
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="schedule">Call Status</string>
+    <string name="completed">Completed</string>
+    <string name="pending">Scheduled</string>
+    <string name="before_dialog_title">Select Delay Before</string>
+    <string name="num_title_req">Phone number and title are mandatory.</string>
+    <string name="before_call">before call</string>
+    <string name="cancel">Cancel</string>
+    <string name="random">Random</string>
+    <string name="fix">Fixed</string>
+
+    <string name="want_delete">Want to delete </string>
+
+    <string name="Start_Time">Set Call Time </string>
+    <string name="End_Time">End Time </string>
+    <string name="want_to_call">Want to call </string>
+</resources>
